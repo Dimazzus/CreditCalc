@@ -1,6 +1,6 @@
 public class PaymentCalc {
     public int calculate(int amount, int months, double percent) {
-        double monthPercent = percent / (months * 100);
+        double monthPercent = percent / (12 * 100);
         double a = 1 + monthPercent;
         double b = months;
         double x = Math.pow(a, b);
